@@ -59,7 +59,7 @@ Action :
     allow 80 port :
     iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 
-    block all traficvs except SSH:
+    block all traffics except SSH:
     iptables -P INPUT DROP    —---- ابتدا تمام ترافیک ورودی مسدود می گردد
      در واقع نو رویکرد (رفتار پیش فرض) را DROP می کند . این رفتار برای chain ها 
      در نظر گرفته می شود . در واقع تمام ورودی ها drop شود مگر پایینی
