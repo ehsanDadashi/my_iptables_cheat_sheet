@@ -57,11 +57,11 @@ Action :
 		iptables -A INPUT -s 192.168.1.100 -j DROP
 
     allow 80 port :
-    iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+    		iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 
     block all traffics except SSH:
-    iptables -P INPUT DROP    —---- ابتدا تمام ترافیک ورودی مسدود می گردد
+    		iptables -P INPUT DROP    —---- ابتدا تمام ترافیک ورودی مسدود می گردد
      در واقع نو رویکرد (رفتار پیش فرض) را DROP می کند . این رفتار برای chain ها 
      در نظر گرفته می شود . در واقع تمام ورودی ها drop شود مگر پایینی
-    iptables -A INPUT -p tcp --dport 22 -j ACCEPT    —--- حال پورت 22 مجاز می گردد .
+    		iptables -A INPUT -p tcp --dport 22 -j ACCEPT    —--- حال پورت 22 مجاز می گردد .
 
