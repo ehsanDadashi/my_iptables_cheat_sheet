@@ -34,19 +34,19 @@ chain :
 
 (rule-spec|num):
 
-  -p <protocol-type> 
+  -p : protocol-type
 
-  -s <source ip address>
+  -s : source ip address
 
-  -d <destination ip address>
+  -d : destination ip address
 
-  -i <input interface name>
+  -i : input interface name
 
-  -o <output interface name>
+  -o : output interface name
 
-  -sport <source port number>
+  -sport : source port number
 
-  -dport <destination port number>
+  -dport : destination port number
 
 Action :
 
